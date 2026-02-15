@@ -1,0 +1,19 @@
+<svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#SmartMarketDoublePortalLogo_svg__clip0_29664_8524)">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M29.192 25.76V5.986c0-1.594-.507-3.091-1.404-4.282l.136-.019c.976-.057 1.873.25 2.594.922.936.844 1.482 2.15 1.482 3.57v18.95c0 1.382-.507 2.592-1.404 3.321a3.08 3.08 0 01-1.93.691c-.098 0-.215-.019-.332-.038.546-.96.858-2.112.858-3.34zm-26.11 2.208l15.034 2.842c.234.038.468.057.702.057.8 0 1.54-.269 2.164-.768.995-.806 1.56-2.13 1.56-3.667V5.812c0-1.573-.585-2.994-1.618-3.935-.82-.73-1.833-1.094-2.886-1.017L3.003 2.088C1.346 2.223 0 4.22 0 6.562v16.51c-.02 2.381 1.365 4.57 3.081 4.896zM24.394 5.813v20.62a7.007 7.007 0 01-.936 3.513c.117.019.253.038.37.038.76 0 1.463-.25 2.048-.73.936-.768 1.482-2.035 1.482-3.494V5.986c0-1.498-.566-2.861-1.54-3.763-.78-.71-1.756-1.056-2.75-.96l-.215.019c.975 1.229 1.54 2.822 1.54 4.53z"
+            fill="url(#SmartMarketDoublePortalLogo_svg__paint0_linear_29664_8524)"></path>
+    </g>
+    <defs>
+        <linearGradient id="SmartMarketDoublePortalLogo_svg__paint0_linear_29664_8524" x1="31.682" y1="16.023"
+            x2="4.425" y2="21.145" gradientUnits="userSpaceOnUse">
+            <stop offset="0.005" stop-color="#BDD725"></stop>
+            <stop offset="0.182" stop-color="#54D184"></stop>
+            <stop offset="0.417" stop-color="#37B8CC"></stop>
+            <stop offset="1" stop-color="#2662E7"></stop>
+        </linearGradient>
+        <clipPath id="SmartMarketDoublePortalLogo_svg__clip0_29664_8524">
+            <path fill="#fff" d="M0 0h32v32H0z"></path>
+        </clipPath>
+    </defs>
+</svg>
