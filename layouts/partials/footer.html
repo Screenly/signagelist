@@ -1,6 +1,6 @@
 <footer class="border-t border-neutral-200 mt-16 bg-neutral-50">
 	<div class="max-w-screen-xl w-full mx-auto px-4 py-12">
-		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+		<div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
 			{{/* Brand */}}
 			<div>
 				<a href="/" class="flex items-center gap-2.5 mb-3">
@@ -29,22 +29,11 @@
 					<li><a href="{{ .Site.Params.githubRepo }}/issues" target="_blank" rel="noopener noreferrer" class="text-sm text-neutral-500 hover:text-neutral-700 transition-colors">Report Issue</a></li>
 				</ul>
 			</div>
-
-			{{/* Data */}}
-			<div>
-				<h3 class="text-xs font-semibold text-neutral-900 uppercase tracking-wider mb-3">Data</h3>
-				<ul class="space-y-2">
-					<li><a href="/llms.txt" class="text-sm text-neutral-500 hover:text-neutral-700 transition-colors">llms.txt</a></li>
-					<li><a href="/llms-full.txt" class="text-sm text-neutral-500 hover:text-neutral-700 transition-colors">llms-full.txt</a></li>
-					<li><a href="{{ .Site.Params.githubRepo }}/tree/main/data/products" target="_blank" rel="noopener noreferrer" class="text-sm text-neutral-500 hover:text-neutral-700 transition-colors">Raw YAML Data</a></li>
-				</ul>
-			</div>
 		</div>
 
 		{{/* Bottom bar */}}
 		<div class="border-t border-neutral-200 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-neutral-400">
 			<div>&copy; {{ now.Year }} SignageList</div>
-			<div>Built with Hugo &amp; Tailwind</div>
 		</div>
 	</div>
 </footer>
