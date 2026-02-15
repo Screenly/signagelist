@@ -34,9 +34,19 @@ This approach ensures that our digital signage directory remains trustworthy, ac
 If you would like to make a pull request to add a new product or update existing data:
 
 1. Fork the repository
-2. Make your changes to the product data files
-3. **Important**: Run `npx signagelist build` to rebuild the product list for the frontend
-4. Commit your changes including the rebuilt files
+2. Make your changes to the product data files in `data/products/` (YAML format)
+3. Run `bun run check` to validate your changes against the schema
+4. Commit your changes
 5. Submit your pull request
 
-This ensures that the frontend will display your changes correctly when the pull request is merged.
+No build step is required — Hugo generates pages directly from the YAML data files at deploy time.
+
+### Adding a product via CLI
+
+You can also use the interactive CLI to add a new product:
+
+```bash
+bun run add
+```
+
+This will walk you through creating the YAML file and optionally processing a logo.
