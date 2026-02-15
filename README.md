@@ -602,3 +602,7 @@ Total Products: 548
 - [Zeroframe](https://zeroframe.art/)
 - [Zignage zCast](https://www.zignage.com/)
 - [ZYNCHRO](https://zynchro.tv/)
+
+## License
+
+The product dataset (`data/products/`) is licensed under the [Open Data Commons Open Database License (ODbL) v1.0](LICENSE-DATA).
