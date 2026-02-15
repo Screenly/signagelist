@@ -5,11 +5,6 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="canonical" href="{{ .Permalink }}">
 
-{{/* Inter font */}}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
 {{/* Open Graph - Rich data cards */}}
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }} - Digital Signage Software Directory{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}">
 <meta property="og:description" content="{{ partial "meta-description.html" . }}">

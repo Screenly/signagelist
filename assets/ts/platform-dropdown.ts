@@ -8,13 +8,15 @@ export function initPlatformDropdown(engine: FilterEngine): void {
 	// Toggle dropdown visibility
 	toggle.addEventListener('click', (e) => {
 		e.stopPropagation()
-		dropdown.classList.toggle('hidden')
+		const isHidden = dropdown.classList.toggle('hidden')
+		toggle.setAttribute('aria-expanded', String(!isHidden))
 	})
 
 	// Close on outside click
 	document.addEventListener('click', (e) => {
 		if (!dropdown.contains(e.target as Node) && e.target !== toggle) {
 			dropdown.classList.add('hidden')
+			toggle.setAttribute('aria-expanded', 'false')
 		}
 	})
 

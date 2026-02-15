@@ -29,7 +29,7 @@
 		<div class="{{ $containerClass }} shrink-0 rounded-lg overflow-hidden bg-neutral-200 p-1">
 			{{ if $isProcessable }}
 				{{ $processed := $logo.Process "fit 400x200 webp" }}
-				<img src="{{ $processed.RelPermalink }}" alt="{{ $name }}" class="w-full h-full object-contain" loading="lazy">
+				<img src="{{ $processed.RelPermalink }}" alt="{{ $name }}" width="{{ $processed.Width }}" height="{{ $processed.Height }}" class="w-full h-full object-contain" loading="lazy">
 			{{ else }}
 				<img src="{{ $logo.RelPermalink }}" alt="{{ $name }}" class="w-full h-full object-contain" loading="lazy">
 			{{ end }}

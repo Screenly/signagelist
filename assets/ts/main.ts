@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			mobileMenu.classList.toggle('hidden', isOpen)
 			menuIconOpen?.classList.toggle('hidden', !isOpen)
 			menuIconClose?.classList.toggle('hidden', isOpen)
+			mobileMenuToggle.setAttribute('aria-expanded', String(!isOpen))
 		})
 	}
 
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			const isOpen = !mobileSecondaryFilters.classList.contains('hidden')
 			mobileSecondaryFilters.classList.toggle('hidden', isOpen)
 			filterChevron?.classList.toggle('rotate-180', !isOpen)
+			mobileFilterToggle.setAttribute('aria-expanded', String(!isOpen))
 		})
 	}
 

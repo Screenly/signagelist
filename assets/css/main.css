@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@font-face {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url("/fonts/inter-latin-wght-normal.woff2") format("woff2-variations");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+		U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+		U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 @theme {
 	/* Primary (Indigo) */
 	--color-primary-50: #eef2ff;
@@ -172,7 +183,7 @@
 		font-weight: 600;
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
-		color: var(--color-neutral-400);
+		color: var(--color-neutral-500);
 		margin-bottom: 0.125rem;
 	}
 	#product-table tbody .product-row td:first-child::before {
@@ -187,4 +198,30 @@
 		border: none !important;
 		border-radius: 0 !important;
 	}
+}
+
+/* Skip to content link */
+.skip-link {
+	position: absolute;
+	left: -9999px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+.skip-link:focus {
+	position: fixed;
+	top: 0.5rem;
+	left: 0.5rem;
+	width: auto;
+	height: auto;
+	padding: 0.75rem 1.5rem;
+	background: var(--color-primary-600);
+	color: white;
+	font-size: 0.875rem;
+	font-weight: 600;
+	border-radius: 0.5rem;
+	z-index: 9999;
+	outline: none;
+	box-shadow: 0 0 0 3px var(--color-primary-200);
 }

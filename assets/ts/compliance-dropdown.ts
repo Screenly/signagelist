@@ -8,13 +8,15 @@ export function initComplianceDropdown(engine: FilterEngine): void {
 	// Toggle dropdown visibility
 	toggle.addEventListener('click', (e) => {
 		e.stopPropagation()
-		dropdown.classList.toggle('hidden')
+		const isHidden = dropdown.classList.toggle('hidden')
+		toggle.setAttribute('aria-expanded', String(!isHidden))
 	})
 
 	// Close on outside click
 	document.addEventListener('click', (e) => {
 		if (!dropdown.contains(e.target as Node) && e.target !== toggle) {
 			dropdown.classList.add('hidden')
+			toggle.setAttribute('aria-expanded', 'false')
 		}
 	})
 
@@ -36,12 +38,14 @@ export function initComplianceDropdown(engine: FilterEngine): void {
 	if (toggleMobile && dropdownMobile) {
 		toggleMobile.addEventListener('click', (e) => {
 			e.stopPropagation()
-			dropdownMobile.classList.toggle('hidden')
+			const isHidden = dropdownMobile.classList.toggle('hidden')
+			toggleMobile.setAttribute('aria-expanded', String(!isHidden))
 		})
 
 		document.addEventListener('click', (e) => {
 			if (!dropdownMobile.contains(e.target as Node) && e.target !== toggleMobile) {
 				dropdownMobile.classList.add('hidden')
+				toggleMobile.setAttribute('aria-expanded', 'false')
 			}
 		})
 

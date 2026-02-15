@@ -38,7 +38,37 @@ enableRobotsTXT = true
   changefreq = "weekly"
   priority = 0.5
 
+[security]
+  [security.http]
+    urls = ['.*']
+    methods = ['(?i)GET']
+
+[caches]
+  [caches.getresource]
+    dir = ':cacheDir/:project'
+    maxAge = '24h'
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[module]
+  [[module.mounts]]
+    source = "node_modules/@fontsource-variable/inter/files"
+    target = "static/fonts"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "data"
+    target = "data"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
