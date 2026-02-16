@@ -9,40 +9,96 @@ assignees: 514sid
 
 **Please provide the following details:**
 
-- **Product Name:**  
-	_What is the name of the product? (Required)_
+### Required
 
-- **Product Website:**  
-	_Official homepage, GitHub repo, or main landing page (Required)_
+- **Product Name:**
+  _What is the name of the product?_
 
-- **Headquarters:**  
-	_Where is the company headquartered? (City, Country or multiple locations) (Required)_
+- **Product Website:**
+  _Official homepage URL_
 
-- **Year Founded:**  
-	_When was the product/company founded? (Required)_
+- **Category:**
+  _Check one or more:_
+  - [ ] CMS
+  - [ ] Content provider
+  - [ ] Computer vision
 
-- **Supported Platforms:**  
-	_List all supported platforms (e.g., Windows, macOS, Linux, Web, iOS, Android, etc.) (Required)_
+- **Headquarters:**
+  _Where is the company headquartered? (Country or multiple countries)_
 
-- **Open Source:**  
-	_Is this product open source? (yes/no) (Required)_
+- **Year Founded:**
+  _When was the product/company founded?_
 
-- **Pricing:**  
-	- Is pricing available? (yes/no):  
-	- Is there a free trial? (yes/no):  
-	- Is there a freemium plan? (yes/no/unsure):  
-	- Plans:  
-		_List each plan with name, monthly price per screen (or skip), yearly price per screen (or skip). Example:_  
-			- Name: Basic, Monthly per screen: 10, Yearly per screen: 100  
-			- Name: Pro, Monthly per screen: 20, Yearly per screen: 200  
+- **Supported Platforms:**
+  _Check all that apply:_
+  - [ ] Windows
+  - [ ] macOS
+  - [ ] Linux
+  - [ ] Web
+  - [ ] iOS
+  - [ ] Android
+  - [ ] Fire OS
+  - [ ] Chrome OS
+  - [ ] Tizen
+  - [ ] webOS
+  - [ ] Raspberry Pi
+  - [ ] Other: ___
 
-- **Discontinued:**  
-	_Is this product discontinued? (yes/no)_
+- **Open Source:**
+  - [ ] This product is open source
+  - License (SPDX identifier, e.g., MIT, AGPL-3.0-only):
+  - Source code URL:
 
-- **Screen Statistics** (Optional)
+- **Self-Signup:**
+  - [ ] Users can sign up without contacting sales
 
-	If available, please provide information about the number of screens currently connected to your software:
+- **Discontinued:**
+  - [ ] This product is discontinued
 
-	- Total Screens: (e.g., 5,000)
-	- Source: (URL to the source of this number, if publicly available – e.g., press release, blog post, website)
-	- Date of Data: (e.g., March 2025 – specify when this number was last verified or published)
+### Pricing
+
+- **Delivery Model:**
+  _Check one:_
+  - [ ] Cloud
+  - [ ] On-premise
+  - [ ] Hybrid
+  - [ ] Self-hosted
+
+- **Pricing:**
+  - [ ] Pricing is publicly available
+  - [ ] Free trial available
+  - [ ] Freemium plan available
+
+- **Plans:**
+  _List each plan with the following details (if pricing is available):_
+  - Name:
+  - Payment model: (subscription / one-time / pay-as-you-go / free)
+  - Billing basis: (per_device / per_user / per_location / flat_rate)
+  - Monthly price per unit: (or skip)
+  - Yearly price per unit: (or skip)
+
+### Authentication & Developer Tools (Optional)
+
+- [ ] SSO
+- [ ] SAML
+- [ ] API (if yes, provide developer portal URL below)
+- [ ] CLI
+- [ ] MCP (Model Context Protocol)
+
+- **Developer Portal URL:**
+
+### Compliance (Optional)
+
+- [ ] SOC 2 Type II
+- [ ] ISO/IEC 27001
+- [ ] HIPAA
+- [ ] EU Cyber Resilience Act (CRA)
+- [ ] FedRAMP
+
+### Screen Statistics (Optional)
+
+If available, please provide information about the number of screens currently connected to the software:
+
+- **Total Screens:** _(e.g., 5,000)_
+- **Source:** _(URL to the source, e.g., press release, blog post)_
+- **Date of Data:** _(e.g., March 2025)_
