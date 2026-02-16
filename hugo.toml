@@ -9,7 +9,7 @@ enableRobotsTXT = true
 
 [params]
   description = "A curated directory of 548+ digital signage software products."
-  githubRepo = "https://github.com/514sid/digital-signage-list"
+  githubRepo = "https://github.com/Screenly/signagelist"
 
 # Custom output formats for LLM-friendly pages
 [mediaTypes]

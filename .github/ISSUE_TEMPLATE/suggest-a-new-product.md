@@ -1,5 +1,5 @@
 ---
-name: "\U0001F680 Suggest a New Product"
+name: "Suggest a New Product"
 about: Suggest a new product
 title: "[Suggestion] Add <Product Name>"
 labels: new product
