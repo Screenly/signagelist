@@ -8,3 +8,7 @@ services:
     volumes:
       - ./:/app
       - /app/node_modules
+      - hugo_cache:/tmp/hugo_cache
+
+volumes:
+  hugo_cache:
