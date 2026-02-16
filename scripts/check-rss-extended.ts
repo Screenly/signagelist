@@ -27,14 +27,7 @@ const SKIP_SLUGS = new Set([
 	'buzzblender',
 ])
 
-const FEED_PATHS = [
-	'/feed/',
-	'/feed.xml',
-	'/atom.xml',
-	'/blog/rss.xml',
-	'/blog/feed/',
-	'/rss',
-]
+const FEED_PATHS = ['/feed/', '/feed.xml', '/atom.xml', '/blog/rss.xml', '/blog/feed/', '/rss']
 
 interface Product {
 	name: string
@@ -52,9 +45,7 @@ interface RssResult {
 async function checkFeed(product: Product): Promise<RssResult | null> {
 	if (!product.website || product.discontinued) return null
 
-	const base = product.website.endsWith('/')
-		? product.website.slice(0, -1)
-		: product.website
+	const base = product.website.endsWith('/') ? product.website.slice(0, -1) : product.website
 
 	for (const path of FEED_PATHS) {
 		const feedUrl = `${base}${path}`
@@ -74,14 +65,8 @@ async function checkFeed(product: Product): Promise<RssResult | null> {
 			clearTimeout(timer)
 
 			if (response.status === 200) {
-				const contentType = (
-					response.headers.get('content-type') ?? ''
-				).toLowerCase()
-				if (
-					contentType.includes('xml') ||
-					contentType.includes('rss') ||
-					contentType.includes('atom')
-				) {
+				const contentType = (response.headers.get('content-type') ?? '').toLowerCase()
+				if (contentType.includes('xml') || contentType.includes('rss') || contentType.includes('atom')) {
 					return { slug: product.slug, name: product.name, rssUrl: feedUrl }
 				}
 			}
@@ -102,13 +87,9 @@ async function main() {
 		return yaml.load(raw) as Product
 	})
 
-	const candidates = products.filter(
-		(p) => p.website && !p.discontinued && !SKIP_SLUGS.has(p.slug),
-	)
+	const candidates = products.filter((p) => p.website && !p.discontinued && !SKIP_SLUGS.has(p.slug))
 	console.log(`Skipping ${SKIP_SLUGS.size} slugs from first /rss.xml scan`)
-	console.log(
-		`Checking ${candidates.length} remaining products against ${FEED_PATHS.length} feed paths ...\n`,
-	)
+	console.log(`Checking ${candidates.length} remaining products against ${FEED_PATHS.length} feed paths ...\n`)
 
 	const results: RssResult[] = []
 	let checked = 0

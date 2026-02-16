@@ -22,9 +22,7 @@ interface RssResult {
 async function checkRss(product: Product): Promise<RssResult | null> {
 	if (!product.website || product.discontinued) return null
 
-	const base = product.website.endsWith('/')
-		? product.website.slice(0, -1)
-		: product.website
+	const base = product.website.endsWith('/') ? product.website.slice(0, -1) : product.website
 	const rssUrl = `${base}/rss.xml`
 
 	try {
@@ -64,9 +62,7 @@ async function main() {
 	})
 
 	const candidates = products.filter((p) => p.website && !p.discontinued)
-	console.log(
-		`Checking ${candidates.length} active products with websites for /rss.xml ...\n`,
-	)
+	console.log(`Checking ${candidates.length} active products with websites for /rss.xml ...\n`)
 
 	const results: RssResult[] = []
 	let checked = 0

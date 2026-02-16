@@ -6,15 +6,7 @@ const PRODUCTS_DIR = join(import.meta.dir, '..', 'data', 'products')
 const TIMEOUT_MS = 5000
 const CONCURRENCY = 20
 
-const ALL_FEED_PATHS = [
-	'/rss.xml',
-	'/feed/',
-	'/feed.xml',
-	'/atom.xml',
-	'/blog/rss.xml',
-	'/blog/feed/',
-	'/rss',
-]
+const ALL_FEED_PATHS = ['/rss.xml', '/feed/', '/feed.xml', '/atom.xml', '/blog/rss.xml', '/blog/feed/', '/rss']
 
 interface Product {
 	name: string
@@ -33,9 +25,7 @@ interface RssResult {
 async function checkFeedPaths(product: Product): Promise<RssResult | null> {
 	if (!product.website || product.discontinued) return null
 
-	const base = product.website.endsWith('/')
-		? product.website.slice(0, -1)
-		: product.website
+	const base = product.website.endsWith('/') ? product.website.slice(0, -1) : product.website
 
 	for (const path of ALL_FEED_PATHS) {
 		const feedUrl = `${base}${path}`
@@ -55,14 +45,8 @@ async function checkFeedPaths(product: Product): Promise<RssResult | null> {
 			clearTimeout(timer)
 
 			if (response.status === 200) {
-				const contentType = (
-					response.headers.get('content-type') ?? ''
-				).toLowerCase()
-				if (
-					contentType.includes('xml') ||
-					contentType.includes('rss') ||
-					contentType.includes('atom')
-				) {
+				const contentType = (response.headers.get('content-type') ?? '').toLowerCase()
+				if (contentType.includes('xml') || contentType.includes('rss') || contentType.includes('atom')) {
 					return { slug: product.slug, name: product.name, rssUrl: feedUrl }
 				}
 			}
@@ -91,10 +75,7 @@ function insertRssFeedUrl(fileContent: string, rssUrl: string): string {
 		// Find the last related field after open_source
 		let insertAfter = openSourceIndex
 		for (let i = openSourceIndex + 1; i < lines.length; i++) {
-			if (
-				lines[i].startsWith('license:') ||
-				lines[i].startsWith('source_code_url:')
-			) {
+			if (lines[i].startsWith('license:') || lines[i].startsWith('source_code_url:')) {
 				insertAfter = i
 			} else {
 				break
@@ -105,9 +86,7 @@ function insertRssFeedUrl(fileContent: string, rssUrl: string): string {
 	}
 
 	// Fallback: insert before "discontinued:" if nothing else found
-	const discontinuedIndex = lines.findIndex((l) =>
-		l.startsWith('discontinued:'),
-	)
+	const discontinuedIndex = lines.findIndex((l) => l.startsWith('discontinued:'))
 	if (discontinuedIndex !== -1) {
 		lines.splice(discontinuedIndex, 0, rssFeedLine)
 		return lines.join('\n')
@@ -134,24 +113,15 @@ async function main() {
 	})
 
 	// Filter: active, has website, doesn't already have rss_feed_url set
-	const candidates = products.filter(
-		({ product }) =>
-			product.website &&
-			!product.discontinued &&
-			!product.rss_feed_url,
-	)
+	const candidates = products.filter(({ product }) => product.website && !product.discontinued && !product.rss_feed_url)
 
-	const alreadyHasRss = products.filter(
-		({ product }) => !!product.rss_feed_url,
-	).length
+	const alreadyHasRss = products.filter(({ product }) => !!product.rss_feed_url).length
 
 	console.log(`Active with website (no existing rss_feed_url): ${candidates.length}`)
 	if (alreadyHasRss > 0) {
 		console.log(`Skipping ${alreadyHasRss} products that already have rss_feed_url`)
 	}
-	console.log(
-		`Checking ${ALL_FEED_PATHS.length} feed paths per product (stopping at first hit)...\n`,
-	)
+	console.log(`Checking ${ALL_FEED_PATHS.length} feed paths per product (stopping at first hit)...\n`)
 
 	// Discover RSS feeds
 	const results: RssResult[] = []
@@ -159,9 +129,7 @@ async function main() {
 
 	for (let i = 0; i < candidates.length; i += CONCURRENCY) {
 		const batch = candidates.slice(i, i + CONCURRENCY)
-		const batchResults = await Promise.all(
-			batch.map(({ product }) => checkFeedPaths(product)),
-		)
+		const batchResults = await Promise.all(batch.map(({ product }) => checkFeedPaths(product)))
 
 		for (const r of batchResults) {
 			if (r) {
@@ -172,9 +140,7 @@ async function main() {
 
 		checked += batch.length
 		if (checked % 100 === 0 || checked === candidates.length) {
-			process.stderr.write(
-				`  ... checked ${checked}/${candidates.length}\n`,
-			)
+			process.stderr.write(`  ... checked ${checked}/${candidates.length}\n`)
 		}
 	}
 
