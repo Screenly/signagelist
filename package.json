@@ -9,7 +9,7 @@
   },
   "author": "514sid",
   "scripts": {
-    "dev": "hugo server",
+    "dev": "hugo server --disableFastRender",
     "build": "hugo --minify",
     "preview": "hugo server --minify",
     "check": "bun run scripts/check.ts",
