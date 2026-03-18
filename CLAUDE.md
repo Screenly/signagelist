@@ -34,6 +34,7 @@ Individual product YAML files (`data/products/*.yaml`) → Hugo Content Adapter 
 ### No Build Pipeline
 
 Unlike the previous Astro+React setup, there is no preprocessing step. `hugo --minify` does everything:
+
 - Reads YAML data files directly
 - Generates all HTML pages via Content Adapters
 - Compiles TypeScript via `js.Build` (esbuild)
@@ -88,6 +89,7 @@ Enforced by Biome:
 ## CI/CD
 
 GitHub Actions (`.github/workflows/deploy.yml`) on push to `main`:
+
 1. Installs Bun + Hugo binary
 2. `bun install` + `hugo --minify`
 3. Deploys to GitHub Pages
