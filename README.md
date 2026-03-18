@@ -59,3 +59,14 @@ Learn more: [Fire OS Overview](https://developer.amazon.com/docs/fire-tv/fire-os
 ## License
 
 The product dataset (`data/products/`) is licensed under the [Open Data Commons Open Database License (ODbL) v1.0](LICENSE-DATA).
+
+### Data Attribution
+
+"SignageList dataset © 514sid and contributors, licensed under ODbL"
+
+## Attribution
+
+© 2026 514sid
+
+SignageList dataset was initially created and is primarily maintained by 514sid.
+Most of the data collection, verification, and curation has been performed by the original author.
