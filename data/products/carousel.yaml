@@ -12,12 +12,13 @@ has_logo: true
 categories:
   - CMS
 platforms:
+  - Amazon Signage
   - BrightSign
   - ChromeOS
-  - Web Browser
   - iOS
   - macOS
   - tvOS
+  - Web Browser
   - webOS
 models:
   - delivery: cloud

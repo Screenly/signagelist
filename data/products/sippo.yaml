@@ -12,6 +12,7 @@ has_logo: false
 categories:
   - CMS
 platforms:
+  - Amazon Signage
   - Android
   - Fire OS
 models:

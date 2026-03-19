@@ -13,12 +13,13 @@ has_logo: true
 categories:
   - CMS
 platforms:
+  - Amazon Signage
   - Android
   - ChromeOS
   - Fire OS
   - Tizen
-  - Windows
   - webOS
+  - Windows
 models:
   - delivery: cloud
     free_trial: true
