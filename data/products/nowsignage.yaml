@@ -12,16 +12,17 @@ has_logo: true
 categories:
   - CMS
 platforms:
+  - Amazon Signage
   - Android
   - BrightSign
   - ChromeOS
   - Fire OS
   - Linux
+  - macOS
   - Tizen
   - Web Browser
-  - Windows
-  - macOS
   - webOS
+  - Windows
 models:
   - delivery: cloud
     free_trial: true

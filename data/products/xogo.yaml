@@ -12,12 +12,13 @@ has_logo: true
 categories:
   - CMS
 platforms:
+  - Amazon Signage
   - Android
   - ChromeOS
   - Fire OS
+  - iOS
   - Web Browser
   - Windows
-  - iOS
 models:
   - delivery: cloud
     free_trial: false

@@ -13,14 +13,15 @@ categories:
   - CMS
   - Computer vision
 platforms:
+  - Amazon Signage
   - Android
   - BrightSign
   - ChromeOS
   - Fire OS
   - Linux
   - Tizen
-  - Windows
   - webOS
+  - Windows
 models:
   - delivery: cloud
     free_trial: false
