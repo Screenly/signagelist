@@ -1,5 +1,8 @@
 {{ define "main" }}
 {{ $p := .Params }}
+{{ $urlProductPage := partial "outbound-url.html" (dict "url" $p.website "campaign" "product_page") | safeURL }}
+{{ $urlSidebar := partial "outbound-url.html" (dict "url" $p.website "campaign" "product_sidebar") | safeURL }}
+{{ $urlSidebarCta := partial "outbound-url.html" (dict "url" $p.website "campaign" "product_sidebar_cta") | safeURL }}
 
 <div class="max-w-screen-xl w-full mx-auto px-4 py-8 animate-fade-in-up">
 	{{/* Breadcrumb */}}
@@ -26,7 +29,7 @@
 					{{ with $p.description }}
 					<p class="text-neutral-600 mt-2 leading-relaxed">{{ . }}</p>
 					{{ end }}
-					<a href="{{ partial "outbound-url.html" (dict "url" $p.website "campaign" "product_page") }}" target="_blank" rel="noopener nofollow ugc" class="inline-flex items-center gap-1.5 text-primary-600 hover:text-primary-700 mt-3 text-sm font-medium transition-colors outbound-link" data-product="{{ $p.slug }}">
+					<a href="{{ $urlProductPage }}" target="_blank" rel="noopener nofollow ugc" class="inline-flex items-center gap-1.5 text-primary-600 hover:text-primary-700 mt-3 text-sm font-medium transition-colors outbound-link" data-product="{{ $p.slug }}">
 						Visit website
 						<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
 					</a>
@@ -181,7 +184,7 @@
 				<dl class="divide-y divide-neutral-100">
 					<div class="px-6 py-3 flex justify-between items-start">
 						<dt class="text-sm text-neutral-500">Website</dt>
-						<dd class="text-sm text-right"><a href="{{ partial "outbound-url.html" (dict "url" $p.website "campaign" "product_sidebar") }}" target="_blank" rel="noopener nofollow ugc" class="text-primary-600 hover:text-primary-700 break-all transition-colors outbound-link" data-product="{{ $p.slug }}">{{ $p.website | replaceRE "^https?://(www\\.)?" "" | strings.TrimRight "/" }}</a></dd>
+						<dd class="text-sm text-right"><a href="{{ $urlSidebar }}" target="_blank" rel="noopener nofollow ugc" class="text-primary-600 hover:text-primary-700 break-all transition-colors outbound-link" data-product="{{ $p.slug }}">{{ $p.website | replaceRE "^https?://(www\\.)?" "" | strings.TrimRight "/" }}</a></dd>
 					</div>
 
 					{{ with $p.headquarters }}
@@ -341,7 +344,7 @@
 
 				{{/* CTA */}}
 				<div class="px-6 py-4 border-t border-neutral-200 space-y-2">
-					<a href="{{ partial "outbound-url.html" (dict "url" $p.website "campaign" "product_sidebar_cta") }}" target="_blank" rel="noopener nofollow ugc"
+					<a href="{{ $urlSidebarCta }}" target="_blank" rel="noopener nofollow ugc"
 						class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors outbound-link" data-product="{{ $p.slug }}">
 						Visit {{ $p.name }}
 						<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>

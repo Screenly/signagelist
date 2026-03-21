@@ -9,4 +9,5 @@
 {{- if strings.Contains $url "?" -}}
   {{- $separator = "&" -}}
 {{- end -}}
-{{- printf "%s%sutm_source=signagelist&utm_medium=referral&utm_campaign=%s" $url $separator $campaign -}}
+{{- $result := printf "%s%sutm_source=signagelist&utm_medium=referral&utm_campaign=%s" $url $separator $campaign | safeURL -}}
+{{- return $result -}}
