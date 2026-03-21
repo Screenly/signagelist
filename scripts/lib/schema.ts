@@ -14,6 +14,7 @@ const PricingSchema = z.object({
 	billing_basis: BillingBasisSchema,
 	monthly: z.number().nullable(),
 	yearly: z.number().nullable(),
+	price: z.number().nullable().optional(),
 })
 
 const ModelSchema = z.object({

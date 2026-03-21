@@ -1,0 +1,38 @@
+name: "fastPano"
+slug: fastpano
+description: ""
+website: "https://fastpano.com/"
+year_founded: 2026
+headquarters: ["Turkey"]
+open_source: false
+rss_feed_url: null
+self_signup: true
+discontinued: false
+has_logo: true
+categories: ["CMS"]
+platforms: [
+  Android
+]
+models:
+  - delivery: self-hosted
+    free_trial: false
+    pricing_available: true
+    has_freemium: false
+    pricing:
+      - name: ""
+        payment_model: one-time
+        billing_basis: per_device
+        monthly: null
+        yearly: null
+        price: 8.8
+
+stats: {}
+notes: []
+features: []
+integrations: []
+target_audience: []
+deployment_options: []
+support_channels: []
+languages: []
+screenshots: []
+last_verified: null
