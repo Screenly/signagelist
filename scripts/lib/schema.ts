@@ -68,8 +68,6 @@ const ProductSchema = z
 		has_saml: z.boolean().default(false),
 		self_signup: z.boolean(),
 		discontinued: z.boolean(),
-		has_logo: z.boolean(),
-
 		// Taxonomies
 		categories: z.array(ProductCategorySchema),
 		platforms: z.array(z.string()),

@@ -10,7 +10,6 @@ license: AGPL-3.0-only
 source_code_url: https://github.com/niclet/garlic-player
 self_signup: true
 discontinued: false
-has_logo: true
 categories:
   - CMS
 platforms:

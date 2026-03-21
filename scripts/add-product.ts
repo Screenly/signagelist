@@ -53,7 +53,6 @@ async function main(): Promise<void> {
 		rss_feed_url: null,
 		self_signup: false,
 		discontinued: false,
-		has_logo: false,
 		categories: [],
 		platforms: [],
 		models: [

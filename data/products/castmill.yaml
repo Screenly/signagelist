@@ -10,7 +10,6 @@ license: AGPL-3.0-only
 source_code_url: https://github.com/castmill/castmill
 self_signup: true
 discontinued: false
-has_logo: true
 categories:
   - CMS
 platforms:

@@ -9,7 +9,6 @@ license: MIT
 source_code_url: https://github.com/niclet/screenlite
 self_signup: false
 discontinued: false
-has_logo: true
 categories:
   - CMS
 platforms:

@@ -9,7 +9,6 @@ open_source: false
 rss_feed_url: https://www.wioplex.com/feed/
 self_signup: false
 discontinued: false
-has_logo: true
 categories:
   - CMS
 platforms:

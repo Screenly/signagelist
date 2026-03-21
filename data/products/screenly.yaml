@@ -15,7 +15,6 @@ has_saml: true
 rss_feed_url: https://www.screenly.io/rss.xml
 self_signup: true
 discontinued: false
-has_logo: true
 categories:
   - CMS
 platforms:

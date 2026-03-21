@@ -10,7 +10,6 @@ license: MIT
 source_code_url: https://github.com/henrik-leppa/hfl-signage-player
 self_signup: false
 discontinued: true
-has_logo: false
 categories:
   - CMS
 platforms:

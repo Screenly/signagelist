@@ -9,7 +9,6 @@ open_source: false
 rss_feed_url: https://visionbox.it/en/visionbox-pro/feed/
 self_signup: false
 discontinued: false
-has_logo: false
 categories:
   - CMS
 platforms: []

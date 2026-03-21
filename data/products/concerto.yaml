@@ -10,7 +10,6 @@ license: Apache-2.0
 source_code_url: https://github.com/concerto/concerto
 self_signup: false
 discontinued: false
-has_logo: true
 categories:
   - CMS
 platforms:
