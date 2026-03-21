@@ -10,7 +10,6 @@ license: GPL-3.0-only
 source_code_url: https://github.com/marco-buratto/signage-orchestrator
 self_signup: true
 discontinued: false
-has_logo: false
 categories:
   - CMS
 platforms: []

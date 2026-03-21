@@ -5,11 +5,10 @@
   */}}
   {{ $name := .Params.name | default "?" }}
   {{ $slug := .Params.slug | default "" }}
-  {{ $hasLogo := .Params.has_logo | default false }}
   {{ $firstLetter := substr $name 0 1 | upper }}
   {{ $size := "sm" }}
   {{ with index . "size" }}{{ $size = . }}{{ end }}
-  
+
   {{/* Size classes */}}
   {{ $containerClass := "w-20 h-10" }}
   {{ $textClass := "text-sm" }}
@@ -20,35 +19,31 @@
 	  {{ $containerClass = "w-28 h-14" }}
 	  {{ $textClass = "text-lg" }}
   {{ end }}
-  
-  {{ if $hasLogo }}
-	{{/* Check if logo exists in the light folder */}}
-	{{ $logo := resources.GetMatch (printf "logos/light/%s.*" $slug) }}
-	{{ $isLightLogo := false }}
-	{{ if $logo }}
-	  {{ $isLightLogo = true }}
-	{{ else }}
-	  {{/* If not found in light, check dark folder */}}
-	  {{ $logo = resources.GetMatch (printf "logos/dark/%s.*" $slug) }}
-	{{ end }}
-  
-	{{ if $logo }}
-	  {{/* Check if the logo is processable */}}
-	  {{ $mediaSubType := $logo.MediaType.SubType }}
-	  {{ $isProcessable := or (eq $mediaSubType "png") (eq $mediaSubType "jpeg") (eq $mediaSubType "webp") (eq $mediaSubType "gif") }}
-  
-	  <div class="{{ $containerClass }} shrink-0 rounded-lg overflow-hidden {{ if $isLightLogo }}bg-neutral-800{{ else }}bg-neutral-200{{ end }} p-1">
-		{{ if $isProcessable }}
-		  {{/* Process image if it is valid and processable */}}
-		  {{ $processed := $logo.Process "fit 400x200 webp" }}
-		  <img src="{{ $processed.RelPermalink }}" alt="{{ $name }}" width="{{ $processed.Width }}" height="{{ $processed.Height }}" class="w-full h-full object-contain" loading="lazy">
-		{{ else }}
-		  <img src="{{ $logo.RelPermalink }}" alt="{{ $name }}" class="w-full h-full object-contain" loading="lazy">
-		{{ end }}
-	  </div>
-	{{ else }}
-	  <div class="{{ $containerClass }} shrink-0 rounded-lg bg-neutral-100 flex items-center justify-center {{ $textClass }} font-medium text-neutral-400">{{ $firstLetter }}</div>
-	{{ end }}
+
+  {{/* Check if logo exists in the light folder */}}
+  {{ $logo := resources.GetMatch (printf "logos/light/%s.*" $slug) }}
+  {{ $isLightLogo := false }}
+  {{ if $logo }}
+	{{ $isLightLogo = true }}
+  {{ else }}
+	{{/* If not found in light, check dark folder */}}
+	{{ $logo = resources.GetMatch (printf "logos/dark/%s.*" $slug) }}
+  {{ end }}
+
+  {{ if $logo }}
+	{{/* Check if the logo is processable */}}
+	{{ $mediaSubType := $logo.MediaType.SubType }}
+	{{ $isProcessable := or (eq $mediaSubType "png") (eq $mediaSubType "jpeg") (eq $mediaSubType "webp") (eq $mediaSubType "gif") }}
+
+	<div class="{{ $containerClass }} shrink-0 rounded-lg overflow-hidden {{ if $isLightLogo }}bg-neutral-800{{ else }}bg-neutral-200{{ end }} p-1">
+	  {{ if $isProcessable }}
+		{{/* Process image if it is valid and processable */}}
+		{{ $processed := $logo.Process "fit 400x200 webp" }}
+		<img src="{{ $processed.RelPermalink }}" alt="{{ $name }}" width="{{ $processed.Width }}" height="{{ $processed.Height }}" class="w-full h-full object-contain" loading="lazy">
+	  {{ else }}
+		<img src="{{ $logo.RelPermalink }}" alt="{{ $name }}" class="w-full h-full object-contain" loading="lazy">
+	  {{ end }}
+	</div>
   {{ else }}
 	<div class="{{ $containerClass }} shrink-0 rounded-lg bg-neutral-100 flex items-center justify-center {{ $textClass }} font-medium text-neutral-400">{{ $firstLetter }}</div>
   {{ end }}

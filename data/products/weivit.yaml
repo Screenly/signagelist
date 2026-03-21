@@ -7,7 +7,6 @@ headquarters: []
 open_source: false
 self_signup: false
 discontinued: true
-has_logo: false
 categories:
   - CMS
 platforms: []

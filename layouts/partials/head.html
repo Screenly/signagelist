@@ -11,7 +11,7 @@
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-{{ if and .IsPage (eq .Section "products") .Params.has_logo }}
+{{ if and .IsPage (eq .Section "products") }}
 	{{ $logo := resources.GetMatch (printf "logos/%s.*" .Params.slug) }}
 	{{ if $logo }}
 		{{ $subType := $logo.MediaType.SubType }}
@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}">
 <meta name="twitter:description" content="{{ partial "meta-description.html" . }}">
-{{ if and .IsPage (eq .Section "products") .Params.has_logo }}
+{{ if and .IsPage (eq .Section "products") }}
 	{{ $logo := resources.GetMatch (printf "logos/%s.*" .Params.slug) }}
 	{{ if $logo }}
 		{{ $subType := $logo.MediaType.SubType }}

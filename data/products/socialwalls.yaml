@@ -9,7 +9,6 @@ open_source: false
 rss_feed_url: https://socialwalls.com/digital-signage/feed/
 self_signup: true
 discontinued: false
-has_logo: true
 categories:
   - Content provider
 platforms: []

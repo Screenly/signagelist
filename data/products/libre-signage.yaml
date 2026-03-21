@@ -10,7 +10,6 @@ license: BSD-3-Clause
 source_code_url: https://github.com/eerotal/LibreSignage
 self_signup: false
 discontinued: true
-has_logo: false
 categories:
   - CMS
 platforms:
