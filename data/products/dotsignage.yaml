@@ -5,6 +5,7 @@ website: https://www.dotsignage.com/
 year_founded: 2018
 headquarters:
   - India
+  - USA
 open_source: false
 rss_feed_url: https://www.dotsignage.com/feed/
 self_signup: true
@@ -19,14 +20,18 @@ models:
   - delivery: cloud
     free_trial: true
     pricing_available: true
-    has_freemium: false
+    has_freemium: true
     pricing:
       - name: Standard
         payment_model: subscription
         billing_basis: per_device
         monthly: 12
         yearly: 120
-stats: {}
+stats:
+  screens:
+    total: 7000
+    source: https://www.dotsignage.com
+    date: 2026-01
 notes: []
 features: []
 integrations: []
