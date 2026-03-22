@@ -2,6 +2,7 @@ baseURL = "https://signagelist.org/"
 languageCode = "en-us"
 title = "SignageList"
 enableRobotsTXT = true
+capitalizeListTitles = false
 
 [taxonomies]
   category = "categories"
