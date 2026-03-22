@@ -2,12 +2,12 @@ name: Slideshow
 slug: slideshow
 description: Digital signage software for Android devices that displays sales and promotional content on screens.
 website: https://slideshow.digital/
-year_founded: 2020
+year_founded: 2012
 headquarters:
   - Slovakia
 open_source: false
 rss_feed_url: https://slideshow.digital/feed/
-self_signup: false
+self_signup: true
 discontinued: false
 categories:
   - CMS
@@ -25,7 +25,11 @@ models:
         billing_basis: per_device
         monthly: 0
         yearly: 0
-stats: {}
+stats:
+  screens:
+    total: 19000
+    source: Developer
+    date: 2026-03
 notes: []
 features: []
 integrations: []
