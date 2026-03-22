@@ -10,22 +10,21 @@ self_signup: true
 discontinued: false
 has_logo: true
 categories: ["CMS"]
-platforms: [
-  Android
-]
+platforms:
+    - Android
+    - Fire OS
 models:
-  - delivery: self-hosted
-    free_trial: false
-    pricing_available: true
-    has_freemium: false
-    pricing:
-      - name: ""
-        payment_model: one-time
-        billing_basis: per_device
-        monthly: null
-        yearly: null
-        price: 8.8
-
+    - delivery: self-hosted
+      free_trial: false
+      pricing_available: true
+      has_freemium: false
+      pricing:
+        - name: ""
+          payment_model: one-time
+          billing_basis: per_device
+          monthly: null
+          yearly: null
+          price: 8.8
 stats: {}
 notes: []
 features: []

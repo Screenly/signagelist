@@ -4,21 +4,22 @@ description: ""
 website: https://lifeloop.com/our-solution
 year_founded: 2025
 headquarters:
-  - USA
+    - USA
 open_source: false
 self_signup: false
 discontinued: false
 categories:
-  - CMS
+    - CMS
 platforms:
-  - Amazon Signage
-  - Fire OS
+    - Amazon Signage
+    - Fire OS
+    - Android
 models:
-  - delivery: cloud
-    free_trial: false
-    pricing_available: false
-    has_freemium: false
-    pricing: []
+    - delivery: cloud
+      free_trial: false
+      pricing_available: false
+      has_freemium: false
+      pricing: []
 stats: {}
 notes: []
 features: []

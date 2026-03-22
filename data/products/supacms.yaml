@@ -9,31 +9,31 @@ rss_feed_url: null
 self_signup: true
 discontinued: false
 categories: ["CMS"]
-platforms: [
-  "Web Browser",
-  "Android",
-]
+platforms:
+    - "Web Browser"
+    - "Android"
+    - Fire OS
 models:
-  - delivery: cloud
-    free_trial: true
-    pricing_available: true
-    has_freemium: false
-    pricing:
-      - name: "Standard"
-        payment_model: subscription
-        billing_basis: per_device
-        monthly: 7
-        yearly: 70
-      - name: "PRO"
-        payment_model: subscription
-        billing_basis: per_device
-        monthly: 14
-        yearly: 140
+    - delivery: cloud
+      free_trial: true
+      pricing_available: true
+      has_freemium: false
+      pricing:
+        - name: "Standard"
+          payment_model: subscription
+          billing_basis: per_device
+          monthly: 7
+          yearly: 70
+        - name: "PRO"
+          payment_model: subscription
+          billing_basis: per_device
+          monthly: 14
+          yearly: 140
 stats:
-  screens:
-    total: 1000
-    source: https://supacms.metaworcs.com/
-    date: 2026-03
+    screens:
+        total: 1000
+        source: https://supacms.metaworcs.com/
+        date: 2026-03
 notes: []
 features: []
 integrations: []
