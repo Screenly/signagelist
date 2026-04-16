@@ -10,33 +10,34 @@ self_signup: false
 discontinued: false
 categories: ["CMS"]
 platforms:
-  - Android
+    - Android
+    - Fire OS
 models:
-  - delivery: cloud
-    free_trial: false
-    pricing_available: false
-    has_freemium: true
-    pricing:
-      - name: "1 screen"
-        payment_model: subscription
-        billing_basis: per_device
-        monthly: 0
-        yearly: 0
-      - name: "Starter - From 5 screens"
-        payment_model: subscription
-        billing_basis: per_device
-        monthly: 5.8
-        yearly: null
-      - name: "Professional - From 25 screens"
-        payment_model: subscription
-        billing_basis: per_device
-        monthly: 3.16
-        yearly: null
+    - delivery: cloud
+      free_trial: false
+      pricing_available: false
+      has_freemium: true
+      pricing:
+        - name: "1 screen"
+          payment_model: subscription
+          billing_basis: per_device
+          monthly: 0
+          yearly: 0
+        - name: "Starter - From 5 screens"
+          payment_model: subscription
+          billing_basis: per_device
+          monthly: 5.8
+          yearly: null
+        - name: "Professional - From 25 screens"
+          payment_model: subscription
+          billing_basis: per_device
+          monthly: 3.16
+          yearly: null
 stats:
-  screens:
-    total: 10
-    source: https://play.google.com/store/apps/details?id=io.digiongo.player
-    date: 2026-03
+    screens:
+        total: 10
+        source: https://play.google.com/store/apps/details?id=io.digiongo.player
+        date: 2026-03
 notes: []
 features: []
 integrations: []
