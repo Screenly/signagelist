@@ -35,7 +35,7 @@
 	{{ $mediaSubType := $logo.MediaType.SubType }}
 	{{ $isProcessable := or (eq $mediaSubType "png") (eq $mediaSubType "jpeg") (eq $mediaSubType "webp") (eq $mediaSubType "gif") }}
 
-	<div class="{{ $containerClass }} shrink-0 rounded-lg overflow-hidden {{ if $isLightLogo }}bg-neutral-800{{ else }}bg-neutral-200{{ end }} p-1">
+	<div class="{{ $containerClass }} shrink-0 rounded-lg overflow-hidden {{ if $isLightLogo }}bg-neutral-800{{ else }}bg-white{{ end }} p-1">
 	  {{ if $isProcessable }}
 		{{/* Process image if it is valid and processable */}}
 		{{ $processed := $logo.Process "fit 400x200 webp" }}
