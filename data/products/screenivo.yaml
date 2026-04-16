@@ -1,0 +1,45 @@
+name: Screenivo
+slug: screenivo
+description: "The digital signage tool built for cafes, retail, offices, and beyond. Set up in minutes, no technical skills or special hardware needed. First screen is free."
+website: https://screenivo.com/
+year_founded: 2026
+headquarters:
+    - "Czech Republic"
+open_source: false
+rss_feed_url: null
+self_signup: true
+discontinued: false
+categories:
+    - CMS
+platforms:
+    - Web Browser
+    - Android
+    - Fire OS
+models:
+    - delivery: cloud
+      free_trial: false
+      pricing_available: true
+      has_freemium: true
+      pricing:
+        - name: Free (1 screen included)
+          payment_model: subscription
+          billing_basis: per_device
+          monthly: 0
+          yearly: null
+        - name: Additional Screens
+          payment_model: subscription
+          billing_basis: per_device
+          monthly: 5
+          yearly: null
+stats: {}
+notes: []
+features: []
+integrations: []
+target_audience: []
+deployment_options: []
+support_channels: []
+languages: []
+screenshots: []
+last_verified: "2026-04-16"
+has_sso: true
+has_api: true
