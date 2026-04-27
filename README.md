@@ -70,3 +70,11 @@ The product dataset (`data/products/`) is licensed under the [Open Data Commons 
 
 SignageList dataset was initially created and is primarily maintained by 514sid.
 Most of the data collection, verification, and curation has been performed by the original author.
+
+## 💰 Bounty Contribution
+
+- **Task:** [Suggestion] Add yugna.com
+- **Reward:** $40
+- **Source:** GitHub-Paid
+- **Date:** 2026-04-27
+
