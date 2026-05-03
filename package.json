@@ -16,6 +16,7 @@
     "check": "bun run scripts/check.ts",
     "add": "bun run scripts/add-product.ts",
     "sync:amazon": "bun run scripts/sync-amazon-signage.ts",
+    "fetch-feeds": "bun run scripts/fetch-feeds.ts",
     "lint": "bunx biome check assets/ts/ scripts/ cli.ts",
     "lint:fix": "bunx biome check --write assets/ts/ scripts/ cli.ts"
   },
@@ -27,6 +28,7 @@
     "js-yaml": "^4.1.1",
     "sharp": "^0.34.5",
     "tailwindcss": "^4.1.18",
+    "fast-xml-parser": "^4.5.0",
     "zod": "^4.3.6"
   },
   "dependencies": {

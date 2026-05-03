@@ -1,0 +1,24 @@
+{
+  "source": "Media Manager 2.0",
+  "fetched_at": "2026-05-03T11:12:17.913Z",
+  "items": [
+    {
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "link": "https://applink.pl/en/2020/02/11/lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-2/",
+      "date": "2020-02-11T15:10:18.000Z",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor sit amet, consectetur adip…"
+    },
+    {
+      "title": "Lorem ipsum dolor sit amet.",
+      "link": "https://applink.pl/en/2020/02/11/lorem-ipsum-dolor-sit-amet-2/",
+      "date": "2020-02-11T15:10:13.000Z",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor sit amet, consectetur adip…"
+    },
+    {
+      "title": "Lorem ipsum dolor sit amet.",
+      "link": "https://applink.pl/en/2020/02/11/lorem-ipsum-dolor-sit-amet/",
+      "date": "2020-02-11T14:24:35.000Z",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor sit amet, consectetur adip…"
+    }
+  ]
+}

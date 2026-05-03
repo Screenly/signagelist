@@ -1,18 +1,17 @@
-{{/* RSS Feed section for product pages */}}
-{{/* Only fetches when rss_feed_url is explicitly set */}}
-{{ with .Params.rss_feed_url }}
-	{{ $items := partial "parse-feed.html" . }}
+{{/* RSS Feed section for product pages — reads from pre-cached data/feeds/products/{slug}.json */}}
+{{ $feedData := index site.Data.feeds.products .Params.slug }}
+{{ with $feedData }}
+	{{ $items := first 5 .items }}
 	{{ with $items }}
-		{{ $limited := first 5 . }}
 		<section class="mb-8">
 			<h2 class="text-lg font-semibold text-neutral-900 mb-4">Latest Updates</h2>
 			<div class="space-y-3">
-				{{ range $limited }}
+				{{ range . }}
 				{{ $outboundUrl := partial "outbound-url.html" (dict "url" .link "campaign" "product_rss") }}
 				<a href="{{ $outboundUrl }}" target="_blank" rel="noopener noreferrer" class="block p-3 rounded-lg border border-neutral-200 hover:border-primary-200 hover:bg-primary-50/50 transition-colors group">
 					<div class="text-sm font-medium text-neutral-900 group-hover:text-primary-700 transition-colors">{{ .title }}</div>
-					{{ if .dateStr }}
-					<div class="text-xs text-neutral-400 mt-1">{{ .date | time.Format "Jan 2, 2006" }}</div>
+					{{ if .date }}
+					<div class="text-xs text-neutral-400 mt-1">{{ time.AsTime .date | time.Format "Jan 2, 2006" }}</div>
 					{{ end }}
 				</a>
 				{{ end }}

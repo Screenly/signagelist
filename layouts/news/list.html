@@ -11,44 +11,33 @@
 	{{/* Collect all feeds */}}
 	{{ $allItems := slice }}
 
-	{{/* Industry feeds */}}
-	{{ $industryFeeds := slice
-		(dict "name" "Sixteen:Nine" "url" "https://feeds2.feedburner.com/Sixteennine-TheDigitalSignageBlog")
-		(dict "name" "DailyDOOH" "url" "http://www.dailydooh.com/feed")
-	}}
-
-	{{ range $feed := $industryFeeds }}
-		{{ $items := partial "parse-feed.html" .url }}
-		{{ range first 10 $items }}
+	{{/* Industry feeds — read from pre-cached data/feeds/industry/ */}}
+	{{ range $_, $feed := site.Data.feeds.industry }}
+		{{ range first 10 .items }}
 			{{ $allItems = $allItems | append (dict
 				"title" .title
 				"link" .link
 				"date" .date
-				"dateStr" .dateStr
 				"description" .description
-				"source" $feed.name
+				"source" $feed.source
 				"sourceType" "industry"
 				"slug" ""
 			) }}
 		{{ end }}
 	{{ end }}
 
-	{{/* Product feeds */}}
-	{{ range $slug, $product := site.Data.products }}
-		{{ with $product.rss_feed_url }}
-			{{ $items := partial "parse-feed.html" . }}
-			{{ range first 5 $items }}
-				{{ $allItems = $allItems | append (dict
-					"title" .title
-					"link" .link
-					"date" .date
-					"dateStr" .dateStr
-					"description" .description
-					"source" $product.name
-					"sourceType" "product"
-					"slug" $product.slug
-				) }}
-			{{ end }}
+	{{/* Product feeds — read from pre-cached data/feeds/products/ */}}
+	{{ range $slug, $feed := site.Data.feeds.products }}
+		{{ range first 5 .items }}
+			{{ $allItems = $allItems | append (dict
+				"title" .title
+				"link" .link
+				"date" .date
+				"description" .description
+				"source" $feed.source
+				"sourceType" "product"
+				"slug" $slug
+			) }}
 		{{ end }}
 	{{ end }}
 
@@ -76,8 +65,8 @@
 						{{ else }}
 							<a href="/products/{{ .slug }}/" class="text-xs font-medium text-primary-600 bg-primary-50 px-2 py-0.5 rounded-md hover:bg-primary-100 transition-colors">{{ .source }}</a>
 						{{ end }}
-						{{ if .dateStr }}
-						<span class="text-xs text-neutral-400">{{ .date | time.Format "Jan 2, 2006" }}</span>
+						{{ if .date }}
+						<span class="text-xs text-neutral-400">{{ time.AsTime .date | time.Format "Jan 2, 2006" }}</span>
 						{{ end }}
 					</div>
 				</div>

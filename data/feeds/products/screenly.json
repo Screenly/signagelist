@@ -1,0 +1,66 @@
+{
+  "source": "Screenly",
+  "fetched_at": "2026-05-03T11:12:17.913Z",
+  "items": [
+    {
+      "title": "Building a culture of wellness at Screenly",
+      "link": "https://www.screenly.io/blog/2026/04/09/wellness-at-screenly/",
+      "date": "2026-04-09T00:00:00.000Z",
+      "description": "<p>During <a href=&#34;https://www.screenly.io/blog/2025/10/22/screenly-2025-annual-summit/&#34;>last year’s annual summit</a>, our CEO Viktor talked about wanting to make wellness a real priority fo…"
+    },
+    {
+      "title": "Screenly sync 0x03: April updates from Screenly",
+      "link": "https://www.screenly.io/blog/2026/04/06/screenly-sync-0x03/",
+      "date": "2026-04-06T00:00:00.000Z",
+      "description": "<p>Welcome to the 4th edition of Screenly Sync, where we share the latest updates across our platform, product, and community.</p> <p>March was an exciting month for us. From showcasing Screenly at E…"
+    },
+    {
+      "title": "Introducing the Screenly Player Max Mk3",
+      "link": "https://www.screenly.io/blog/2026/03/31/screenly-player-max-mk3-launch/",
+      "date": "2026-03-31T00:00:00.000Z",
+      "description": "<p>We&rsquo;re thrilled to announce the newest addition to the Screenly hardware family, the Screenly Player Max Mk3. Built for enterprises that demand rock-solid performance and <a href=&#34;/securi…"
+    },
+    {
+      "title": "Screenly Sync 0x02: March product news and industry trendss",
+      "link": "https://www.screenly.io/blog/2026/03/23/screenly-sync-0x02/",
+      "date": "2026-03-23T00:00:00.000Z",
+      "description": "<p>This month, we are sharing product improvements, infrastructure updates, and field insights. From better error handling to major website upgrades and industry conversations around security, here i…"
+    },
+    {
+      "title": "Screenly Changelog episode 17 - SAP, enterprise data, and the future of intelligent signage",
+      "link": "https://www.screenly.io/blog/2026/03/16/screenly-changelog-episode-17/",
+      "date": "2026-03-16T00:00:00.000Z",
+      "description": "<p><strong>Screenly Changelog episode 17:</strong> <em>Screenly Changelog episode 17: SAP, enterprise data, and the future of intelligent signage with Chris Carter of Approyo</em></p> <p>Enterprise s…"
+    },
+    {
+      "title": "Why a dedicated hardware player is the best choice for enterprise digital signage",
+      "link": "https://www.screenly.io/blog/2026/03/02/why-dedicated-hardware-players-are-best-for-enterprise-digital-signage/",
+      "date": "2026-03-02T00:00:00.000Z",
+      "description": "<p>Enterprise digital signage is more than screens displaying content.</p> <p>Some screens are internal, showing operational dashboards, production metrics, or safety instructions. Others are public-…"
+    },
+    {
+      "title": "Screenly Sync 0x01: February Platform &amp; Industry Updates",
+      "link": "https://www.screenly.io/blog/2026/02/06/screenly-sync-0x01/",
+      "date": "2026-02-06T00:00:00.000Z",
+      "description": "<p>Welcome to the second edition of our monthly newsletter, where we share news from the digital signage industry, Screenly product updates, and stories. This month, we have exciting updates on new a…"
+    },
+    {
+      "title": "Screenly Bug Bounty: Building a Stronger Security Feedback Loop",
+      "link": "https://www.screenly.io/blog/2026/01/30/screenly-bug-bounty-building-a-stronger-security-feedback-loop/",
+      "date": "2026-01-30T00:00:00.000Z",
+      "description": "<p>At Screenly, we have always been a security-first digital signage company. To double down on that commitment and streamline responsible disclosure for researchers, we officially launched Screenly’…"
+    },
+    {
+      "title": "Introducing Screenly MCP: Connecting AI Assistants to Digital Signage Infrastructure",
+      "link": "https://www.screenly.io/blog/2026/01/15/introducing-screenly-mcp/",
+      "date": "2026-01-15T00:00:00.000Z",
+      "description": "<p>What if you could manage all your digital signage with one command: <strong>“Update all lobby screens with the new promo playlist”?</strong></p> <p>With Screenly’s new <strong>Model Context Protoc…"
+    },
+    {
+      "title": "Screenly Sync 0x00: 2025 Year-End Review",
+      "link": "https://www.screenly.io/blog/2025/12/13/screenly-sync-0x00/",
+      "date": "2025-12-13T00:00:00.000Z",
+      "description": "<p>Screenly Sync is your monthly update on all things Screenly, including our Player, Backend, Apps, and <a href=&#34;https://anthias.screenly.io/&#34;>Anthias</a>.</p> <p>In this first edition and 2…"
+    }
+  ]
+}
