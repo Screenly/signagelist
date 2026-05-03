@@ -4,6 +4,7 @@ description: Digital signage platform for remotely sharing content to screens.
 website: https://juuno.co/
 year_founded: 2022
 headquarters:
+  - USA
   - Australia
 open_source: false
 self_signup: true
