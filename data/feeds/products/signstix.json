@@ -1,7 +1,31 @@
 {
   "source": "SignStix",
-  "fetched_at": "2026-05-03T11:12:17.913Z",
+  "fetched_at": "2026-05-04T07:54:33.708Z",
   "items": [
+    {
+      "title": "SignStix Interactive Features",
+      "link": "https://signstix.com/digital-signage-solutions/signstix-interactive-features/",
+      "date": "2024-05-15T15:35:15.000Z",
+      "description": ""
+    },
+    {
+      "title": "Installing The X96",
+      "link": "https://signstix.com/support/tutorials/installing-the-x96/",
+      "date": "2024-05-15T14:23:23.000Z",
+      "description": ""
+    },
+    {
+      "title": "Compact Digital Signage Media Player X96",
+      "link": "https://signstix.com/digital-signage-solutions/compact-digital-signage-media-player-x96/",
+      "date": "2024-05-15T14:16:17.000Z",
+      "description": ""
+    },
+    {
+      "title": "Refee Digital",
+      "link": "https://signstix.com/refee-digital/",
+      "date": "2024-05-15T08:45:17.000Z",
+      "description": ""
+    },
     {
       "title": "Support",
       "link": "https://signstix.com/support/",
@@ -36,30 +60,6 @@
       "title": "Digital Signage Blog",
       "link": "https://signstix.com/news/digital-signage-blog/",
       "date": "2021-10-27T14:06:57.000Z",
-      "description": ""
-    },
-    {
-      "title": "SignStix Interactive Features",
-      "link": "https://signstix.com/digital-signage-solutions/signstix-interactive-features/",
-      "date": "2024-05-15T15:35:15.000Z",
-      "description": ""
-    },
-    {
-      "title": "Installing The X96",
-      "link": "https://signstix.com/support/tutorials/installing-the-x96/",
-      "date": "2024-05-15T14:23:23.000Z",
-      "description": ""
-    },
-    {
-      "title": "Compact Digital Signage Media Player X96",
-      "link": "https://signstix.com/digital-signage-solutions/compact-digital-signage-media-player-x96/",
-      "date": "2024-05-15T14:16:17.000Z",
-      "description": ""
-    },
-    {
-      "title": "Refee Digital",
-      "link": "https://signstix.com/refee-digital/",
-      "date": "2024-05-15T08:45:17.000Z",
       "description": ""
     }
   ]

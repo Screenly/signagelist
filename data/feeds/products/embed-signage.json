@@ -1,6 +1,6 @@
 {
   "source": "embed signage",
-  "fetched_at": "2026-05-03T11:12:17.913Z",
+  "fetched_at": "2026-05-04T07:54:33.708Z",
   "items": [
     {
       "title": "New Public API, BrightSign v2.1.2 app and Firmware Selector plus Colour Picker and Gradients",
@@ -21,15 +21,9 @@
       "description": ""
     },
     {
-      "title": "BrightSign Digital Signage &#8211; CMS Advanced Partner",
-      "link": "https://embedsignage.com/devices/brightsign/",
-      "date": "2026-01-21T15:14:33.000Z",
-      "description": ""
-    },
-    {
-      "title": "Blog",
-      "link": "https://embedsignage.com/blog/",
-      "date": "2026-01-15T10:31:32.000Z",
+      "title": "Widgets",
+      "link": "https://embedsignage.com/features/widgets/",
+      "date": "2026-03-10T10:44:36.000Z",
       "description": ""
     },
     {
@@ -51,15 +45,21 @@
       "description": ""
     },
     {
+      "title": "BrightSign Digital Signage &#8211; CMS Advanced Partner",
+      "link": "https://embedsignage.com/devices/brightsign/",
+      "date": "2026-01-21T15:14:33.000Z",
+      "description": ""
+    },
+    {
       "title": "embed signage &#8211; digital signage software",
       "link": "https://embedsignage.com/",
       "date": "2026-01-21T13:24:14.000Z",
       "description": ""
     },
     {
-      "title": "Widgets",
-      "link": "https://embedsignage.com/features/widgets/",
-      "date": "2026-03-10T10:44:36.000Z",
+      "title": "Blog",
+      "link": "https://embedsignage.com/blog/",
+      "date": "2026-01-15T10:31:32.000Z",
       "description": ""
     }
   ]

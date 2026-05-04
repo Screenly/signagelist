@@ -1,6 +1,6 @@
 {
   "source": "PRTV",
-  "fetched_at": "2026-05-03T11:12:17.913Z",
+  "fetched_at": "2026-05-04T07:54:33.708Z",
   "items": [
     {
       "title": "Не грузит Youtube? Подборка аналогов для запуска видео в PRTV",
@@ -27,12 +27,6 @@
       "description": ""
     },
     {
-      "title": "Меню борд &#8212; закусочная ретро стиль",
-      "link": "https://s.prtv.su/menyu-bordy/zakusochnaya/menyu-bord-zakusochnaya-retro-stil",
-      "date": "2026-04-22T21:26:48.000Z",
-      "description": ""
-    },
-    {
       "title": "Меню борд &#8212; закусочная кавказский стиль",
       "link": "https://s.prtv.su/menyu-bordy/zakusochnaya/menyu-bord-zakusochnaya-kavkazskij-stil-2",
       "date": "2026-04-28T18:00:52.000Z",
@@ -48,6 +42,12 @@
       "title": "Радио и фоновая музыка",
       "link": "https://s.prtv.su/novosti/radio-dlya-slajd-shou",
       "date": "2026-04-28T08:44:41.000Z",
+      "description": ""
+    },
+    {
+      "title": "Меню борд &#8212; закусочная ретро стиль",
+      "link": "https://s.prtv.su/menyu-bordy/zakusochnaya/menyu-bord-zakusochnaya-retro-stil",
+      "date": "2026-04-22T21:26:48.000Z",
       "description": ""
     },
     {

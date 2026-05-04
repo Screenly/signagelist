@@ -1,11 +1,35 @@
 {
   "source": "Pictor",
-  "fetched_at": "2026-05-03T11:12:17.913Z",
+  "fetched_at": "2026-05-04T07:54:33.708Z",
   "items": [
     {
-      "title": "Blog",
-      "link": "https://pictorplayer.pl/index.php/blog/",
-      "date": "2024-02-27T14:26:13.000Z",
+      "title": "Cennik",
+      "link": "https://pictorplayer.pl/index.php/cennik/",
+      "date": "2025-12-29T21:12:58.000Z",
+      "description": ""
+    },
+    {
+      "title": "Ekrany informacyjne",
+      "link": "https://pictorplayer.pl/index.php/ekrany-informacyjne/",
+      "date": "2025-12-29T21:05:52.000Z",
+      "description": ""
+    },
+    {
+      "title": "Odtwarzacze Digital Signage",
+      "link": "https://pictorplayer.pl/index.php/odtwarzacze-digital-signage/",
+      "date": "2025-12-29T20:51:08.000Z",
+      "description": ""
+    },
+    {
+      "title": "Licencja systemu Pictor Basic",
+      "link": "https://pictorplayer.pl/index.php/catalog_product/licencja-systemu-pictor-basic/",
+      "date": "2025-12-27T16:30:03.000Z",
+      "description": ""
+    },
+    {
+      "title": "My Quote",
+      "link": "https://pictorplayer.pl/index.php/my-quote/",
+      "date": "2025-12-27T04:56:35.000Z",
       "description": ""
     },
     {
@@ -33,33 +57,9 @@
       "description": ""
     },
     {
-      "title": "Licencja systemu Pictor Basic",
-      "link": "https://pictorplayer.pl/index.php/catalog_product/licencja-systemu-pictor-basic/",
-      "date": "2025-12-27T16:30:03.000Z",
-      "description": ""
-    },
-    {
-      "title": "My Quote",
-      "link": "https://pictorplayer.pl/index.php/my-quote/",
-      "date": "2025-12-27T04:56:35.000Z",
-      "description": ""
-    },
-    {
-      "title": "Cennik",
-      "link": "https://pictorplayer.pl/index.php/cennik/",
-      "date": "2025-12-29T21:12:58.000Z",
-      "description": ""
-    },
-    {
-      "title": "Ekrany informacyjne",
-      "link": "https://pictorplayer.pl/index.php/ekrany-informacyjne/",
-      "date": "2025-12-29T21:05:52.000Z",
-      "description": ""
-    },
-    {
-      "title": "Odtwarzacze Digital Signage",
-      "link": "https://pictorplayer.pl/index.php/odtwarzacze-digital-signage/",
-      "date": "2025-12-29T20:51:08.000Z",
+      "title": "Blog",
+      "link": "https://pictorplayer.pl/index.php/blog/",
+      "date": "2024-02-27T14:26:13.000Z",
       "description": ""
     }
   ]

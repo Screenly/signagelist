@@ -6,6 +6,7 @@ year_founded: 2010
 headquarters:
   - Spain
 open_source: false
+rss_feed_url: https://www.waapiti.eu/feed/
 self_signup: false
 discontinued: false
 categories:

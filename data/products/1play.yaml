@@ -6,6 +6,7 @@ year_founded: 2016
 headquarters:
   - Romania
 open_source: false
+rss_feed_url: https://1play.tv/blog/feed/
 self_signup: true
 discontinued: false
 categories:

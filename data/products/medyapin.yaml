@@ -6,6 +6,7 @@ year_founded: 2017
 headquarters:
   - Turkey
 open_source: false
+rss_feed_url: https://medyapin.com/feed/
 self_signup: true
 discontinued: false
 categories:
