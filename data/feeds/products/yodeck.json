@@ -1,7 +1,19 @@
 {
   "source": "Yodeck",
-  "fetched_at": "2026-05-06T07:42:37.184Z",
+  "fetched_at": "2026-05-07T07:49:56.138Z",
   "items": [
+    {
+      "title": "Digital signage design: rules, layouts, and best practices that work",
+      "link": "https://www.yodeck.com/use-cases/digital-signage-design/",
+      "date": "2026-05-06T16:01:16.000Z",
+      "description": "A practical guide to designing screens that get noticed, read, and remembered, even when viewers only glance for a second or two."
+    },
+    {
+      "title": "Tips on how to choose and create the best digital signage content",
+      "link": "https://www.yodeck.com/use-cases/digital-signage-content/",
+      "date": "2026-05-06T15:27:26.000Z",
+      "description": "If you want to make the biggest impact on your customers, students, or employees with your digital signage today, the key is not just in technology. It's in the content."
+    },
     {
       "title": "Digital signage for internal communications: the practical playbook",
       "link": "https://www.yodeck.com/use-cases/digital-signage-for-internal-communications/",
