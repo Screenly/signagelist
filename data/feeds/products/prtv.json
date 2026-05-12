@@ -1,7 +1,37 @@
 {
   "source": "PRTV",
-  "fetched_at": "2026-05-11T08:31:50.775Z",
+  "fetched_at": "2026-05-12T07:51:50.628Z",
   "items": [
+    {
+      "title": "Календарь",
+      "link": "https://s.prtv.su/informery/kalendar",
+      "date": "2026-05-12T06:19:21.000Z",
+      "description": ""
+    },
+    {
+      "title": "Часы",
+      "link": "https://s.prtv.su/informery/chasy",
+      "date": "2026-05-12T06:17:18.000Z",
+      "description": ""
+    },
+    {
+      "title": "Информеры погоды (OpenWeather)",
+      "link": "https://s.prtv.su/informery/openweather",
+      "date": "2026-05-12T06:17:04.000Z",
+      "description": ""
+    },
+    {
+      "title": "Карта погоды (OpenWeather)",
+      "link": "https://s.prtv.su/informery/karta-pogody",
+      "date": "2026-05-12T06:16:56.000Z",
+      "description": ""
+    },
+    {
+      "title": "Курс валют",
+      "link": "https://s.prtv.su/informery/kurs-valyut",
+      "date": "2026-05-12T06:15:40.000Z",
+      "description": ""
+    },
     {
       "title": "Радио",
       "link": "https://s.prtv.su/informery/radio",
@@ -42,6 +72,12 @@
       "title": "Конструктор PRTV.SU &#8212; Главная",
       "link": "https://s.prtv.su",
       "date": "2026-05-07T13:11:07.000Z",
+      "description": ""
+    },
+    {
+      "title": "Частые вопросы по конструктору слайд-шоу и приложению",
+      "link": "https://s.prtv.su/instrukczii/faq",
+      "date": "2026-05-07T06:46:24.000Z",
       "description": ""
     },
     {
