@@ -1,7 +1,19 @@
 {
   "source": "Yodeck",
-  "fetched_at": "2026-05-13T07:58:05.909Z",
+  "fetched_at": "2026-05-14T07:51:36.816Z",
   "items": [
+    {
+      "title": "Using Amazon Fire TV Stick for Digital Signage: A Step-by-Step Guide",
+      "link": "https://www.yodeck.com/use-cases/amazon-fire-tv-stick-digital-signage/",
+      "date": "2026-05-13T15:16:33.000Z",
+      "description": "The setup, the limits, and the cheapest free software path. All in under ten minutes."
+    },
+    {
+      "title": "Differences and Examples of POSM, POP and POS: The Complete Breakdown",
+      "link": "https://www.yodeck.com/use-cases/posm-pos-pop-display/",
+      "date": "2026-05-13T14:21:48.000Z",
+      "description": "Diving straight into the world of retail marketing, you may have stumbled upon the acronyms above. But what do they actually mean? And what role can they play in your business?"
+    },
     {
       "title": "Digital signage security: what every IT team should check before deploying",
       "link": "https://www.yodeck.com/use-cases/digital-signage-security/",
