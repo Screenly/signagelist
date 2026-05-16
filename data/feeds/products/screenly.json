@@ -1,7 +1,13 @@
 {
   "source": "Screenly",
-  "fetched_at": "2026-05-14T07:51:36.816Z",
+  "fetched_at": "2026-05-16T07:23:16.544Z",
   "items": [
+    {
+      "title": "Anthias v2026.05.0 is here",
+      "link": "https://www.screenly.io/blog/2026/05/15/anthias-v2026-05-0/",
+      "date": "2026-05-15T00:00:00.000Z",
+      "description": "<p>After months of work, we&rsquo;re thrilled to ship Anthias v2026.05.0, a landmark update that touches nearly every part of the project. Whether you&rsquo;re running a single display in a coffee sh…"
+    },
     {
       "title": "Screenly Sync 0x04: May updates from Screenly",
       "link": "https://www.screenly.io/blog/2026/05/08/screenly-sync-0x04/",
