@@ -1,7 +1,37 @@
 {
   "source": "Fusion Signage",
-  "fetched_at": "2026-05-18T08:52:51.702Z",
+  "fetched_at": "2026-05-19T08:36:37.529Z",
   "items": [
+    {
+      "title": "It's official: Fusion Signage now powers 20,000+ screens",
+      "link": "https://fusionsignage.com.au/blog/20k-screens-powered",
+      "date": "2026-05-19T01:21:24.000Z",
+      "description": "Guess what? The number of active Fusion Signage licences just ticked over to 20,000. That’s twenty thousand screens across Australia and New Zealand."
+    },
+    {
+      "title": "These just landed – new features bundle May 2026",
+      "link": "https://fusionsignage.com.au/blog/new-features-may-2026",
+      "date": "2026-05-18T22:06:29.000Z",
+      "description": "A few new features have made their way into Fusion Signage. They’ve come straight from real conversations, requests, and “hey, could it also do this?” moments. Simple to use. Ready when you are. Here…"
+    },
+    {
+      "title": "Meet Open APIs",
+      "link": "https://fusionsignage.com.au/blog/meet-open-apis",
+      "date": "2026-05-18T22:02:45.000Z",
+      "description": "Fusion Signage has always been about making digital signage easy‑peasy. We also know that no matter how many features we build, we’ll never be able to cover every possible use case out there – and th…"
+    },
+    {
+      "title": "Passkeys have arrived &#x1f60e;",
+      "link": "https://fusionsignage.com.au/blog/passkeys-have-arrived",
+      "date": "2026-05-18T22:00:58.000Z",
+      "description": "Logging in should be easy and secure. That’s why Fusion Signage now supports passkeys – a modern, password‑free way to access your account. Passkeys let you sign in using the security already built i…"
+    },
+    {
+      "title": "Meet the Zapier integration",
+      "link": "https://fusionsignage.com.au/blog/zapier-integration",
+      "date": "2026-05-18T21:58:58.000Z",
+      "description": ""
+    },
     {
       "title": "Reseller Spotlight: Metromatics",
       "link": "https://fusionsignage.com.au/blog/reseller-spotlight-metromatics",
